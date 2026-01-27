@@ -52,7 +52,7 @@
     <!-- Guest Authentication Modal -->
     <div v-if="showGuestModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4" @click.self="closeGuestForm">
       <div class="w-full max-w-xl bg-surface-dark rounded-2xl border border-surface-border p-6">
-        <div class="mb-6 flex items-center justify-end gap-2">
+        <div class="mb-4 flex items-center justify-end gap-2">
           <button
             type="button"
             class="h-9 px-4 rounded-full border border-surface-border text-white hover:border-primary text-sm transition-colors"
@@ -69,16 +69,12 @@
           >
             Sign In
           </button>
-        </div>
-
-        <EmailLogin v-if="authMode === 'login'" @logged-in="onGuestLoggedIn" />
-        <SignIn v-else @submit="submitGuest" />
-        
-        <div class="mt-6 flex justify-end">
-          <button class="px-6 py-2 rounded-full border border-surface-border text-white hover:border-primary transition-colors" @click="closeGuestForm">
+          <button class="h-9 px-4 rounded-full border border-surface-border text-white hover:border-primary text-sm transition-colors" @click="closeGuestForm">
             Close
           </button>
         </div>
+        <EmailLogin v-if="authMode === 'login'" @logged-in="onGuestLoggedIn" />
+        <SignIn v-else @submit="submitGuest" />
       </div>
     </div>
 
