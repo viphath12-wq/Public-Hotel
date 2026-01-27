@@ -189,7 +189,7 @@ import EmailLogin from './components/Login.vue'
 import SignIn from './components/Sign_In.vue'
 import Profile from './components/Profile.vue'
 import configurl from './util/configurl'
-import QRCodeImage from './assets/QRcode.jpg'
+import QRCodeImage from '@/assets/QRcode.jpg'
 
 export default {
   name: 'App',
