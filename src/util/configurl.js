@@ -6,8 +6,8 @@
 // export default configurl
 
 const configurl = {
-  baseurl: 'https://mysql-production-8781.up.railway.app/api', // Production API URL
-  image_path: 'https://mysql-production-8781.up.railway.app/storage/' // Production image storage path
+  baseurl: 'https://databasevue-production.up.railway.app/api',
+  image_path: 'https://databasevue-production.up.railway.app/storage/'
 }
 
 export default configurl
