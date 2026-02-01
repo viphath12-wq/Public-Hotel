@@ -31,7 +31,7 @@
               </button>
 
               <div v-if="menuOpen"
-                class="absolute right-0 mt-2 w-52 overflow-hidden rounded-2xl border border-[color:var(--color-surface-border)] bg-[#0D1811] shadow-xl shadow-black/30">
+                class="absolute right-0 mt-2 w-40 overflow-hidden rounded-2xl border border-[color:var(--color-surface-border)] bg-[#0D1811] shadow-xl shadow-black/30">
                 <RouterLink v-for="item in menuItems" :key="item.to" :to="item.to"
                   class="flex items-center justify-between px-4 py-3 text-sm text-white/80 transition hover:bg-white/5 hover:text-white"
                   @click="menuOpen = false">
@@ -76,7 +76,7 @@
             <!-- Premium Dropdown Menu -->
             <div 
               v-if="isAccountMenuOpen || isAccountMenuHover"
-              class="absolute right-0 top-full z-50 mt-2 w-72 origin-top-right overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-[#1A1F2C]/95 to-[#0F172A]/95 shadow-2xl shadow-black/30 backdrop-blur-xl transition-all duration-300"
+              class="absolute right-0 top-full z-50 mt-2 w-60 origin-top-right overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-[#1A1F2C]/95 to-[#0F172A]/95 shadow-2xl shadow-black/30 backdrop-blur-xl transition-all duration-300"
               :class="isAccountMenuOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'"
             >
               <!-- Customer Info Header -->
@@ -180,7 +180,7 @@
         <div class="absolute inset-0 bg-black/60" @click="open = false" />
 
         <div
-          class="absolute right-0 top-0 h-full w-[86%] max-w-sm border-l border-[color:var(--color-surface-border)] bg-[color:rgba(13,24,17,0.92)] p-5 backdrop-blur">
+          class="absolute right-0 top-0 h-full w-[50%] max-w-sm border-l border-[color:var(--color-surface-border)] bg-[color:rgba(13,24,17,0.92)] p-5 backdrop-blur">
           <div class="flex items-center justify-between">
             <div class="flex min-w-0 items-center gap-3">
               <img src="@/assets/Hotel_icon.png" alt="Hotel" class="h-9 w-9" />
