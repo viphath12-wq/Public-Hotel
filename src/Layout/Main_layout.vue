@@ -1,12 +1,12 @@
 <template>
   <div class="flex min-h-dvh flex-col bg-[var(--color-background-dark)] text-white">
-  <header class="fixed w-full inset-x-0 top-[-5px] z-50">
+  <header class="fixed w-full inset-x-0 top-[-8px] z-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div
         class="mt-3 flex items-center justify-between rounded-2xl border border-[color:var(--color-surface-border)] bg-[color:rgba(13,24,17,0.72)] px-4 py-3 backdrop-blur supports-[backdrop-filter]:bg-[color:rgba(13,24,17,0.55)]">
         <RouterLink to="/" class="flex min-w-0 items-center gap-3">
-          <div class="grid h-10 w-10 place-items-center">
-            <img src="@/assets/Hotel_icon.png" alt="Hotel" class="h-10 w-10" />
+          <div class="grid h-8 w-8 place-items-center">
+            <img src="@/assets/Hotel_icon.png" alt="Hotel" class="h-8 w-8" />
           </div>
           <div class="min-w-0">
             <div class="truncate text-base font-bold tracking-wide text-white">Battambang Hotel</div>
@@ -53,7 +53,7 @@
               @click="toggleAccountMenu"
             >
               <div class="relative">
-                <div class="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-[#36E27B]/20 to-[#36E27B]/5 ring-1 ring-white/30">
+                <div class="flex h-6 w-6 items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-[#36E27B]/20 to-[#36E27B]/5 ring-1 ring-white/30">
                   <img 
                     v-if="isLoggedIn && customerImageUrl" 
                     :src="customerImageUrl" 
