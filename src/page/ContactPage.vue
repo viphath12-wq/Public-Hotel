@@ -26,15 +26,15 @@
               </div>
               <div class="flex items-start gap-2">
                 <span class="material-symbols-outlined text-[18px] text-[color:var(--color-primary)]">call</span>
-                <span>+855 12 345 678</span>
+                <span>+855 96 361 2863</span>
               </div>
               <div class="flex items-start gap-2">
                 <span class="material-symbols-outlined text-[18px] text-[color:var(--color-primary)]">mail</span>
-                <span>hello@battambanghotel.example</span>
+                <span>hello@battambanghotel.com</span>
               </div>
               <div class="flex items-start gap-2">
                 <span class="material-symbols-outlined text-[18px] text-[color:var(--color-primary)]">chat</span>
-                <span>WhatsApp: +855 12 345 678</span>
+                <span>WhatsApp: +855 96 361 2863</span>
               </div>
             </div>
 
@@ -76,10 +76,6 @@
               Send Message
             </button>
           </form>
-
-          <div class="mt-6 rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-white/60">
-            Tip: Add your real email/WhatsApp integration later (Laravel/Node backend). This UI is ready for production wiring.
-          </div>
         </div>
       </div>
     </div>
