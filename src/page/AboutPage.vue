@@ -10,43 +10,43 @@
           feel at home.
         </p>
 
-        <div class="mt-8 grid gap-4">
+        <div class="mt-9 grid gap-4">
           <div class="rounded-3xl border border-[color:var(--color-surface-border)] bg-[color:rgba(17,33,23,0.6)] p-6">
-            <div class="flex items-start gap-4">
-              <span class="material-symbols-outlined mt-3 text-[22px] text-[color:var(--color-primary)]">
-                star
-              </span>
-              <div>
-                <div class="text-sm font-semibold">Our mission</div>
-                <div class="mt-2 text-sm text-white/65">Deliver premium comfort with calm service and modern
-                  convenience.</div>
+            <div class="flex items-center gap-4">
+              <div
+                class="grid h-12 w-12 place-items-center rounded-2xl bg-[color:rgba(54,226,123,0.12)] ring-1 ring-[color:rgba(54,226,123,0.25)]">
+                <span class="material-symbols-outlined text-[22px] text-[color:var(--color-primary)]">star</span>
               </div>
+              <div class="text-sm font-semibold">Our mission</div>
             </div>
+            <div class="mt-2 text-sm text-white/65">Deliver premium comfort with calm service and modern
+              convenience.</div>
           </div>
-          <div class="rounded-3xl border border-[color:var(--color-surface-border)] bg-[color:rgba(17,33,23,0.6)] p-6">
-            <div class="flex items-start gap-4">
-              <span class="material-symbols-outlined mt-3 text-[22px] text-[color:var(--color-primary)]">
-                favorite
-              </span>
-              <div>
-                <div class="text-sm font-semibold">Hospitality values</div>
-                <div class="mt-2 text-sm text-white/65">Respect, cleanliness, safety, and thoughtful attention to
-                  detail.</div>
+          <div
+            class="mt-6 rounded-3xl border border-[color:var(--color-surface-border)] bg-[color:rgba(17,33,23,0.6)] p-6">
+            <div class="flex items-center gap-4">
+              <div
+                class="grid h-12 w-12 place-items-center rounded-2xl bg-[color:rgba(54,226,123,0.12)] ring-1 ring-[color:rgba(54,226,123,0.25)]">
+                <span class="material-symbols-outlined text-[22px] text-[color:var(--color-primary)]">favorite</span>
               </div>
+              <div class="text-sm font-semibold">Hospitality values</div>
+            </div>
+            <div class="mt-2 text-sm text-white/65">Respect, cleanliness, safety, and thoughtful attention to
             </div>
           </div>
         </div>
 
         <div
           class="mt-9 rounded-3xl border border-[color:var(--color-surface-border)] bg-[color:rgba(17,33,23,0.6)] p-6">
-          <div class="flex items-start gap-4">
-            <span class="material-symbols-outlined mt-5 text-[22px] text-[color:var(--color-primary)]">verified</span>
-            <div>
-              <div class="text-sm font-semibold">Awards & certifications</div>
-              <div class="mt-1 text-sm text-white/65">Add your awards here (e.g., TripAdvisor Traveler’s Choice, safety
-                certifications).</div>
+          <div class="flex items-center gap-4">
+            <div
+              class="grid h-12 w-12 place-items-center rounded-2xl bg-[color:rgba(54,226,123,0.12)] ring-1 ring-[color:rgba(54,226,123,0.25)]">
+              <span class="material-symbols-outlined text-[22px] text-[color:var(--color-primary)]">verified</span>
             </div>
+            <div class="text-sm font-semibold">Awards & certifications</div>
           </div>
+          <div class="mt-3 text-sm text-white/65">Add your awards here (e.g., TripAdvisor Traveler’s Choice, safety
+            certifications).</div>
         </div>
       </div>
 
