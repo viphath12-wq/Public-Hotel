@@ -90,7 +90,7 @@
                 </button>
               </form>
 
-              <div class="grid gap-3">
+              <div class="mt-6 grid gap-3">
                 <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
                   <span class="material-symbols-outlined text-[20px] text-[color:var(--color-primary)]">spa</span>
                   <div>
@@ -112,7 +112,7 @@
       </div>
     </section>
 
-    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section class="mx-auto max-w-7xl mb-10 px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col gap-2">
         <h2 class="text-2xl font-bold tracking-tight">Highlights</h2>
         <p class="text-sm text-white/65">Everything you need for a smooth, premium stay.</p>

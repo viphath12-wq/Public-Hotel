@@ -12,5 +12,5 @@
 </template>
 
 <script setup>
-import SignupGuest from '@/components/guest-auth/SignupGuest.vue'
+import SignupGuest from '@/components/SignupGuest.vue'
 </script>

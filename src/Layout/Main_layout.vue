@@ -1,6 +1,6 @@
 <template>
   <div class="flex min-h-dvh flex-col bg-[var(--color-background-dark)] text-white">
-  <header class="fixed w-full inset-x-0 top-[-8px] z-50">
+  <header class="fixed w-full inset-x-0 top-[-5px] z-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div
         class="mt-3 flex items-center justify-between rounded-2xl border border-[color:var(--color-surface-border)] bg-[color:rgba(13,24,17,0.72)] px-4 py-3 backdrop-blur supports-[backdrop-filter]:bg-[color:rgba(13,24,17,0.55)]">
@@ -14,64 +14,50 @@
           </div>
         </RouterLink>
         <div class="flex items-center gap-3">
-          <RouterLink to="/booking"
-            class="hidden rounded-xl bg-[color:rgba(54,226,123,0.16)] px-4 py-2 text-sm font-semibold text-[color:var(--color-primary)] ring-1 ring-[color:rgba(54,226,123,0.28)] transition hover:bg-[color:rgba(54,226,123,0.22)] md:inline-flex">
-            Book Now
-          </RouterLink>
           <nav class="hidden items-center gap-1 md:flex">
             <NavLink to="/" label="Home" />
             <NavLink to="/rooms" label="Rooms" />
 
             <div class="relative">
               <button type="button"
-                class="inline-flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-medium text-white/70 transition hover:bg-white/5 hover:text-white"
+                class="inline-flex h-10 w-20 cursor-pointer items-center justify-center rounded-xl border border-[color:var(--color-surface-border)] bg-[color:rgba(17,33,23,0.55)] text-white/80 transition hover:text-[color:var(--color-primary)] hover:bg-[var(--color-primary)/50]"
                 :class="menuOpen ? 'bg-white/5 text-white' : ''" @click="toggleMenu">
                 Menu
-                <span class="material-symbols-outlined text-[18px]">expand_more</span>
               </button>
 
               <div v-if="menuOpen"
                 class="absolute right-0 mt-2 w-40 overflow-hidden rounded-2xl border border-[color:var(--color-surface-border)] bg-[#0D1811] shadow-xl shadow-black/30">
                 <RouterLink v-for="item in menuItems" :key="item.to" :to="item.to"
-                  class="flex items-center justify-between px-4 py-3 text-sm text-white/80 transition hover:bg-white/5 hover:text-white"
+                  class="flex items-center justify-between px-4 py-3 text-sm text-white/80 transition hover:text-[var(--color-primary)]"
                   @click="menuOpen = false">
                   <span>{{ item.label }}</span>
-                  <span class="material-symbols-outlined text-[18px]">chevron_right</span>
                 </RouterLink>
               </div>
             </div>
           </nav>
+          <RouterLink to="/booking"
+            class="hidden rounded-xl bg-[color:rgba(54,226,123,0.16)] px-4 py-2 text-sm font-semibold text-[color:var(--color-primary)] ring-1 ring-[color:rgba(54,226,123,0.28)] transition hover:bg-[color:rgba(54,226,123,0.22)] md:inline-flex">
+            Book Now
+          </RouterLink>
           <button type="button"
             class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[color:var(--color-surface-border)] bg-[color:rgba(17,33,23,0.55)] text-white/80 transition hover:text-white md:hidden"
             aria-label="Open menu" @click="open = true">
             <span class="material-symbols-outlined">menu</span>
           </button>
           <!-- Account Profile - Premium Hotel Version -->
-          <div class="relative" @mouseenter="isAccountMenuHover = true" @mouseleave="isAccountMenuHover = false">
-            <button 
-              class="group flex items-center gap-2 rounded-full bg-white/10 px-4 py-2.5 text-white ring-1 ring-white/20 backdrop-blur-md transition-all hover:bg-white/20 hover:ring-white/30 hover:shadow-lg hover:shadow-[#36E27B]/10"
-              @click="toggleAccountMenu"
-            >
-              <div class="relative">
-                <div class="flex h-6 w-6 items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-[#36E27B]/20 to-[#36E27B]/5 ring-1 ring-white/30">
-                  <img 
-                    v-if="isLoggedIn && customerImageUrl" 
-                    :src="customerImageUrl" 
-                    alt="Customer" 
-                    class="h-full w-full object-cover"
-                  />
-                  <span v-else class="material-symbols-outlined text-[#36E27B]">person</span>
-                </div>
-                <div class="absolute -bottom-1 -right-1 h-3 w-3 rounded-full border-2 border-[#1A1F2C] bg-[#36E27B]"></div>
+          <div class="relative cursor-pointer" @mouseenter="isAccountMenuHover = true" @mouseleave="isAccountMenuHover = false">
+            <div class="relative" @click="toggleAccountMenu">
+              <div class="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-[#36E27B]/20 to-[#36E27B]/5 ring-1 ring-white/30">
+                <img 
+                  v-if="isLoggedIn && customerImageUrl" 
+                  :src="customerImageUrl" 
+                  alt="Customer" 
+                  class="h-full w-full object-cover"
+                />
+                <span v-else class="material-symbols-outlined text-[#36E27B]">person</span>
               </div>
-              <span class="hidden font-medium md:inline">Account</span>
-              <span 
-                class="material-symbols-outlined text-base text-white/80 transition-transform duration-300" 
-                :class="{ 'rotate-180': isAccountMenuOpen }"
-              >
-                expand_more
-              </span>
-            </button>
+              <div class="absolute -bottom-0 -right-0 h-3 w-3 rounded-full border-2 border-[#1A1F2C] bg-[#36E27B]"></div>
+            </div>
 
             <!-- Premium Dropdown Menu -->
             <div 
@@ -144,7 +130,7 @@
                     <span class="material-symbols-outlined text-[#36E27B] text-lg">person_add</span>
                   </div>
                   <div class="flex-1">
-                    <span class="font-medium">Create Account</span>
+                    <span class="font-medium">Sign Up</span>
                   </div>
                 </RouterLink>
 
@@ -201,7 +187,6 @@
               class="flex items-center justify-between rounded-xl border border-[color:var(--color-surface-border)] bg-[color:rgba(17,33,23,0.55)] px-4 py-3 text-sm text-white/85 transition hover:text-white"
               @click="open = false">
               <span>{{ item.label }}</span>
-              <span class="material-symbols-outlined text-[18px]">chevron_right</span>
             </RouterLink>
           </div>
         </div>

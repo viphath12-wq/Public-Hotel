@@ -97,7 +97,7 @@
         class="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white/85 transition hover:bg-white/10"
         @click="loadMore"
       >
-        Load More Rooms
+        More Rooms
       </button>
     </div>
 

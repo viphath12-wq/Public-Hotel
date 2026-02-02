@@ -1,49 +1,44 @@
 <template>
   <div class="rounded-3xl border border-[color:var(--color-surface-border)] bg-[color:rgba(17,33,23,0.6)] p-6">
     <div class="text-sm font-semibold">Create Guest Account</div>
-    <p class="mt-2 text-sm text-white/65">Create an account with your email. No password is required in this demo backend.</p>
+    <p class="mt-2 text-sm text-white/65">Create an account with your email. No password is required in this demo
+      backend.</p>
 
     <form class="mt-6 grid gap-4" @submit.prevent="submit">
       <label class="grid gap-1">
         <span class="text-xs text-white/60">Full name</span>
-        <input v-model.trim="form.name" class="h-11 rounded-xl border border-white/10 bg-white/5 px-3 text-sm text-white outline-none transition focus:border-white/25" />
+        <input v-model.trim="form.name"
+          class="h-11 rounded-xl border border-white/10 bg-white/5 px-3 text-sm text-white outline-none transition focus:border-white/25" />
       </label>
 
       <label class="grid gap-1">
         <span class="text-xs text-white/60">Email</span>
-        <input
-          v-model.trim="form.email"
-          type="email"
-          class="h-11 rounded-xl border border-white/10 bg-white/5 px-3 text-sm text-white outline-none transition focus:border-white/25"
-        />
+        <input v-model.trim="form.email" type="email"
+          class="h-11 rounded-xl border border-white/10 bg-white/5 px-3 text-sm text-white outline-none transition focus:border-white/25" />
       </label>
 
       <label class="grid gap-1">
         <span class="text-xs text-white/60">Phone (optional)</span>
-        <input v-model.trim="form.phone" class="h-11 rounded-xl border border-white/10 bg-white/5 px-3 text-sm text-white outline-none transition focus:border-white/25" />
+        <input v-model.trim="form.phone"
+          class="h-11 rounded-xl border border-white/10 bg-white/5 px-3 text-sm text-white outline-none transition focus:border-white/25" />
       </label>
 
       <label class="grid gap-2">
         <span class="text-xs text-white/60">Profile image (optional)</span>
         <div class="flex items-center gap-3">
-          <div class="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white/5">
+          <div
+            class="flex h-11 w-12 md:w-13 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white/5">
             <img v-if="previewUrl" :src="previewUrl" alt="Preview" class="h-full w-full object-cover" />
             <span v-else class="material-symbols-outlined text-white/50">person</span>
           </div>
-          <input
-            type="file"
-            accept="image/*"
+          <input type="file" accept="image/*"
             class="block w-full text-sm text-white/70 file:mr-4 file:rounded-xl file:border-0 file:bg-white/10 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-white hover:file:bg-white/15"
-            @change="onFileChange"
-          />
+            @change="onFileChange" />
         </div>
       </label>
 
-      <button
-        type="submit"
-        :disabled="loading"
-        class="inline-flex h-11 items-center justify-center rounded-xl bg-[color:rgba(54,226,123,0.16)] text-sm font-semibold text-[color:var(--color-primary)] ring-1 ring-[color:rgba(54,226,123,0.28)] transition hover:bg-[color:rgba(54,226,123,0.22)] disabled:cursor-not-allowed disabled:opacity-70"
-      >
+      <button type="submit" :disabled="loading"
+        class="inline-flex h-11 items-center justify-center rounded-xl bg-[color:rgba(54,226,123,0.16)] text-sm font-semibold text-[color:var(--color-primary)] ring-1 ring-[color:rgba(54,226,123,0.28)] transition hover:bg-[color:rgba(54,226,123,0.22)] disabled:cursor-not-allowed disabled:opacity-70">
         {{ loading ? 'Creating...' : 'Create Account' }}
       </button>
 
