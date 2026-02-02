@@ -25,7 +25,7 @@
       class="mt-8 overflow-hidden rounded-3xl border border-[color:var(--color-surface-border)] bg-[color:rgba(17,33,23,0.6)]">
       <div class="grid gap-0 lg:grid-cols-2">
         <img class="h-64 w-full object-cover lg:h-90"
-          src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1800&q=80"
+          src="@/assets/amenities.jpg"
           alt="Hotel amenities including spa and pool" loading="lazy" />
         <div class="p-7">
           <div class="text-sm font-semibold">Designed for calm and convenience</div>

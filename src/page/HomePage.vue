@@ -60,7 +60,7 @@
                 <div class="text-xs text-white/60">Best rates on direct booking</div>
               </div>
 
-              <form class="grid gap-4" @submit.prevent="goBooking">
+              <form class="grid mt-2 gap-4" @submit.prevent="goBooking">
                 <div class="grid gap-4 sm:grid-cols-2">
                   <label class="grid gap-1">
                     <span class="text-xs text-white/60">Check-in</span>

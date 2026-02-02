@@ -41,37 +41,43 @@
 
 <script setup>
 import { RouterLink } from 'vue-router'
+import image1 from '../assets/gallery1.jpg'
+import image2 from '../assets/gallery2.jpg'
+import image3 from '../assets/gallery3.jpg'
+import image4 from '../assets/gallery4.jpg'
+import image5 from '../assets/gallery5.jpg'
+import image6 from '../assets/gallery6.jpg'
 
 const images = [
   {
     title: 'Luxury Room',
     alt: 'Warm lighting and premium bedding',
-    src: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=1800&q=80',
+    src: image1,
   },
   {
     title: 'Lobby',
     alt: 'Clean and modern reception',
-    src: 'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1800&q=80',
+    src: image2,
   },
   {
     title: 'Dining',
     alt: 'Signature restaurant mood',
-    src: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1800&q=80',
+    src: image3,
   },
   {
     title: 'Pool',
     alt: 'Resort pool relaxation',
-    src: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1800&q=80',
+    src: image4,
   },
   {
     title: 'Suite',
     alt: 'Extra space and comfort',
-    src: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1800&q=80',
+    src: image5,
   },
   {
     title: 'Views',
     alt: 'City and riverside scenery',
-    src: 'https://images.unsplash.com/photo-1470167290877-7d5d3446de4c?auto=format&fit=crop&w=1800&q=80',
+    src: image6,
   },
 ]
 </script>
