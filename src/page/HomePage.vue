@@ -64,14 +64,14 @@
                 <div class="grid gap-4 sm:grid-cols-2">
                   <label class="grid gap-1">
                     <span class="text-xs text-white/60">Check-in</span>
-                    <input v-model="form.checkIn" type="date" class="h-11 w-full rounded-xl border border-white/10 bg-white/5 px-3 text-sm text-white outline-none transition focus:border-white/25" />
+                    <input v-model="form.checkIn" type="date" class="h-11 rounded-xl border border-white/10 bg-white/5 px-3 text-sm text-white outline-none transition focus:border-white/25" />
                   </label>
                   <label class="grid gap-1">
                     <span class="text-xs text-white/60">Check-out</span>
-                    <input v-model="form.checkOut" type="date" class="h-11 w-full rounded-xl border border-white/10 bg-white/5 px-3 text-sm text-white outline-none transition focus:border-white/25" />
+                    <input v-model="form.checkOut" type="date" class="h-11 rounded-xl border border-white/10 bg-white/5 px-3 text-sm text-white outline-none transition focus:border-white/25" />
                   </label>
                 </div>
-
+                
                 <label class="grid gap-1">
                   <span class="text-xs text-white/60">Guests</span>
                   <select v-model.number="form.guests" class="h-11 w-full rounded-xl border border-white/10 bg-white/5 px-3 text-sm text-white outline-none transition focus:border-white/25">
