@@ -5,13 +5,13 @@
       <p class="text-sm text-white/65">Find us quickly, message us easily, and book with confidence.</p>
     </div>
 
-    <div class="mt-9 grid gap-8 lg:grid-cols-12">
+    <div class="mt-6 grid gap-8 lg:grid-cols-12">
       <div class="lg:col-span-7">
         <div class="overflow-hidden rounded-3xl border border-[color:var(--color-surface-border)] bg-[color:rgba(17,33,23,0.6)]">
-          <div class="aspect-[16/10]">
+          <div class="aspect-[20/10]">
             <iframe
               title="Google Map"
-              class="h-full w-full"
+              class="h-96 w-full"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps?q=Battambang%20Cambodia&output=embed"
